@@ -1,0 +1,12 @@
+---
+layout: default
+title: Niemeyer Research Group
+categories:
+ - home
+---
+{% include JB/setup %}
+{% for page in site.categories.misc %}
+{% if page.homepage %}
+	{% assign homepage = page %}
+{% endif %}
+{% endfor %}
